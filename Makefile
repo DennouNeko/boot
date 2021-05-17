@@ -12,12 +12,6 @@ stage1.bin: stage1.asm
 stage2.bin: stage2.asm
 	nasm -w+all -f bin -o stage2.bin stage2.asm
 
-2021-05-08: stage2.2021-05-08.asm
-	nasm -w+all -f bin -o stage2.bin stage2.2021-05-08.asm
-
-2021-05-09: stage2.2021-05-09.asm
-	nasm -w+all -f bin -o stage2.bin stage2.2021-05-09.asm
-
 all: stage1.bin stage2.bin
 
 clean:
